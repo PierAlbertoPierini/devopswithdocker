@@ -1,0 +1,28 @@
+docker run -d -it --rm devopsdockeruh/exec_bash_exercise
+
+script -a 1.4 -c 'docker exec -it suspicious_chatterjee bash'
+
+Script started on 2020-07-12 18:02:37-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="82" LINES="19"]
+root@02c6a0aef2b4:/usr/app# 
+[Kroot@02c6a0aef2b4:/usr/app# tail -f ./logs.txt
+Secret message is:
+"Docker is easy"
+Mon, 13 Jul 2020 01:02:32 GMT
+Mon, 13 Jul 2020 01:02:35 GMT
+Mon, 13 Jul 2020 01:02:38 GMT
+Mon, 13 Jul 2020 01:02:41 GMT
+Secret message is:
+"Docker is easy"
+Mon, 13 Jul 2020 01:02:47 GMT
+Mon, 13 Jul 2020 01:02:50 GMT
+Mon, 13 Jul 2020 01:02:53 GMT
+Mon, 13 Jul 2020 01:02:56 GMT
+Secret message is:
+"Docker is easy"
+Mon, 13 Jul 2020 01:03:02 GMT
+Mon, 13 Jul 2020 01:03:05 GMT
+Mon, 13 Jul 2020 01:03:08 GMT
+^C
+root@02c6a0aef2b4:/usr/app# read escape sequence
+
+Script done on 2020-07-12 18:03:15-07:00 [COMMAND_EXIT_CODE="1"]
