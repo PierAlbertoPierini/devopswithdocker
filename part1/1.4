@@ -1,28 +1,34 @@
-docker run -d -it --rm devopsdockeruh/exec_bash_exercise
+Script started on 2020-08-03 17:04:54-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="41"]
+]0;pap@bookone: ~/Projects/Docker/github-devopswithdocker/part1[01;32mpap@bookone[00m:[01;34m~/Projects/Docker/github-devopswithdocker/part1[00m$ docker run -d --rm --name ex14 devopsdockeruh/exec_bash_exercise
+93ecde521c8858622cedff2806b88efe7fadf1bef91abd65b8e40a855744cc12
+]0;pap@bookone: ~/Projects/Docker/github-devopswithdocker/part1[01;32mpap@bookone[00m:[01;34m~/Projects/Docker/github-devopswithdocker/part1[00m$ docker exec -it ex14
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
 
-script -a 1.4 -c 'docker exec -it suspicious_chatterjee bash'
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 
-Script started on 2020-07-12 18:02:37-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="82" LINES="19"]
-root@02c6a0aef2b4:/usr/app# 
-[Kroot@02c6a0aef2b4:/usr/app# tail -f ./logs.txt
+Run a command in a running container
+]0;pap@bookone: ~/Projects/Docker/github-devopswithdocker/part1[01;32mpap@bookone[00m:[01;34m~/Projects/Docker/github-devopswithdocker/part1[00m$ docker exec -it ex14 bash
+root@93ecde521c88:/usr/app# [Kroot@93ecde521c88:/usr/app# tail -f ./logs.txt
+Tue, 04 Aug 2020 00:06:07 GMT
+Tue, 04 Aug 2020 00:06:10 GMT
 Secret message is:
 "Docker is easy"
-Mon, 13 Jul 2020 01:02:32 GMT
-Mon, 13 Jul 2020 01:02:35 GMT
-Mon, 13 Jul 2020 01:02:38 GMT
-Mon, 13 Jul 2020 01:02:41 GMT
+Tue, 04 Aug 2020 00:06:16 GMT
+Tue, 04 Aug 2020 00:06:19 GMT
+Tue, 04 Aug 2020 00:06:22 GMT
+Tue, 04 Aug 2020 00:06:25 GMT
 Secret message is:
 "Docker is easy"
-Mon, 13 Jul 2020 01:02:47 GMT
-Mon, 13 Jul 2020 01:02:50 GMT
-Mon, 13 Jul 2020 01:02:53 GMT
-Mon, 13 Jul 2020 01:02:56 GMT
+Tue, 04 Aug 2020 00:06:31 GMT
+Tue, 04 Aug 2020 00:06:34 GMT
+Tue, 04 Aug 2020 00:06:37 GMT
+Tue, 04 Aug 2020 00:06:40 GMT
 Secret message is:
 "Docker is easy"
-Mon, 13 Jul 2020 01:03:02 GMT
-Mon, 13 Jul 2020 01:03:05 GMT
-Mon, 13 Jul 2020 01:03:08 GMT
 ^C
-root@02c6a0aef2b4:/usr/app# read escape sequence
+root@93ecde521c88:/usr/app# exit
+]0;pap@bookone: ~/Projects/Docker/github-devopswithdocker/part1[01;32mpap@bookone[00m:[01;34m~/Projects/Docker/github-devopswithdocker/part1[00m$ exit
+exit
 
-Script done on 2020-07-12 18:03:15-07:00 [COMMAND_EXIT_CODE="1"]
+Script done on 2020-08-03 17:06:50-07:00 [COMMAND_EXIT_CODE="130"]
